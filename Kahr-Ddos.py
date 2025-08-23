@@ -43,7 +43,7 @@ def init_socket(ip,port):
 
 def main():
     if len(sys.argv)<5:
-        print(("\033[92mUsage: {} example.com 80 100 10".format(sys.argv[0])))
+        print(("\033[92mUsage: {} example.com 80 100 10".format(sys.argv[])))
         return
 
     ip = sys.argv[1]
@@ -73,7 +73,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m {}      Sending to packet".format("\n")))
+            print(("\033[33m {}     Sending to packet".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
