@@ -4,6 +4,7 @@ import sys
 import random
 import socket
 import time
+import fade
 from progress.bar import Bar
 
 regular_headers = [ "User-agent: Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0",
