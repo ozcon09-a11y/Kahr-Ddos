@@ -12,9 +12,8 @@ from threading import Thread
 from colorama import Fade
 from fake_headers import Headers
 
-
-os.system('clear')
-def logo()"""
+os.system("clear")
+logo = """
 
    _/       _/     _/ _/     _/        _/  _/_/_/_/_/
    _/     _/     _/     _/   _/        _/  _/       _/
