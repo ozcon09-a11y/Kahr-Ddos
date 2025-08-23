@@ -64,7 +64,7 @@ def main():
     bar.finish()
 
     while True:
-        print(("\033[0;37;40m [÷] Kahr Conecting to Wabs {}".format(len(socket_list))))
+        print(("\033[92m [÷] Kahr Conecting to Wabs {}".format(len(socket_list))))
 
         for s in socket_list:
             try:
