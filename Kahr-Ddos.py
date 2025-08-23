@@ -30,7 +30,7 @@ logo = """
 \033[96m╚════════════════════════════════════════════════
 """
 faded_text = fade.fire(logo)
-print(faded_text
+print(faded_text)
 def init_socket(ip,port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(4)
