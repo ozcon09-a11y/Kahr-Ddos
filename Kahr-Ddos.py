@@ -3,39 +3,37 @@
 import os
 import sys
 import random
-import socket
 import time
-import fade
+import socket
+import getpass
 from progress.bar import Bar
+import requests as r, os, threading, random, click, fake_headers
+from threading import Thread
+from colorama import Fade
+from fake_headers import Headers
 
-# Colors
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
+def clear(): 
+	if os.name == 'nt': 
+		os.system('cls') 
+	else: 
+		os.system('clear')
 
-os.system("clear")
-logo = """
-_____________________________________________________________
-
-        ████▒▒             
-      ██▒▒  ██▒▒██████▒   █████▒   ███▒     ████▒
-      ██▒▒  ██▒▒    ██▒ ██▒▒      ██▒▒ ██▒ ██▒  ██▒▒
-      ██▒▒  ██▒▒   ██▒ ██▒▒       ██▒▒ ██▒ ██▒  ██▒▒
-      ██▒▒  ██▒▒  ██▒   ██▒▒      ██▒▒ ██▒ ██▒. ██▒▒ 
-        ████▒▒   ██████▒  █████▒    ███▒   ██▒  ██▒▒
-        ▒▒▒▒     ▒▒▒▒▒▒    ▒▒▒▒    ▒▒▒      ▒▒   ▒▒
-         ▒▒        ▒▒▒      ▒▒      ▒▒       ▒    ▒
-          ▒        ▒▒        ▒       ▒       ▒    ▒
-          
-\033[31m-—————————————————— OZCON IS A BLOW ——————————————————————————
-\033[32m             WHICH WILL DESTROY ARROGANCE
-\033[33m                    Author: KF24
-\033[35m                   kode_keras.com
-________________________________________________________________
-\033[37m______________________________________________________________
+def logo()"""
+         _/ _/ _/         _/ _/       _/ _/ _/   _/ _/ _/ 
+        _/      _/     _/     _/   _/           _/        
+       _/      _/    _/       _/  _/           _/             
+      _/ _/ _/      _/       _/     _/        _/        034[0m/Base
+     _/       _/   _/       _/         _/    _/ _/ _/      
+    _/        _/  _/ _/ _/ _/           _/  _/             
+   _/ _/ _/ _/   _/       _/    _/ _/ _/   _/ _/ _/ _/     
+\033[96m╔════════════════════════════════════════════════╗
+\033[96m║\033[34m           BRIGADE ATTACKER SNIPER ELITE \033[96m║
+\033[96m║\033[33m                  INTERNAL SCRIPT        \033[96m║
+\033[96m║\033[32m                     By: KF'99           \033[96m║
+\033[96m║\033[95m                      ——o0o——            \033[96m║
+\033[96m╚════════════════════════════════════════════════
 """
-
+faded_text = fade.fire(logo)
 def init_socket(ip,port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(4)
