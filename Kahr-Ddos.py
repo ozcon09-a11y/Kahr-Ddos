@@ -8,6 +8,12 @@ import time
 import fade
 from progress.bar import Bar
 
+# Colors
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+
 os.system("clear")
 logo = """
 _____________________________________________________________
