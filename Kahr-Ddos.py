@@ -23,9 +23,9 @@ logo = """
        
 \033[96m╔═════════════════════════════════════════════════════╗
 \033[96m║\033[34m                                                      \033[96m║
-\033[96m║\033[33m                      INTERNAL SCRIPT                     \033[96m║
-\033[96m║\033[32m                         By: KF'99                        \033[96m║
-\033[96m║\033[95m                          ——o0o——                         \033[96m║
+\033[96m║\033[33m                      INTERNAL SCRIPT                 \033[96m║
+\033[96m║\033[32m                         By: KF'99                    \033[96m║
+\033[96m║\033[95m                          ——o0o——                     \033[96m║
 \033[96m╚══════════════════════════════════════════════════════
 """
 faded_text = fade.fire(logo)
@@ -43,7 +43,7 @@ def init_socket(ip,port):
 
 def main():
     if len(sys.argv)<5:
-        print(("Usage: {} example.com 80 100 10".format(sys.argv[0])))
+        print(("\033[92mUsage: {} example.com 80 100 10".format(sys.argv[0])))
         return
 
     ip = sys.argv[1]
