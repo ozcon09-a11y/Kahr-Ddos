@@ -12,13 +12,10 @@ from threading import Thread
 from colorama import Fade
 from fake_headers import Headers
 
-def clear(): 
-	if os.name == 'nt': 
-		os.system('cls') 
-	else: 
-		os.system('clear')
 
+os.system('clear')
 def logo()"""
+
    _/       _/     _/ _/     _/        _/  _/_/_/_/_/
    _/     _/     _/     _/   _/        _/  _/       _/
    _/   _/      _/       _/  _/        _/  _/       _/    
