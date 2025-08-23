@@ -4,13 +4,11 @@ import os
 import sys
 import random
 import time
+import fade
 import socket
 import getpass
 from progress.bar import Bar
-import requests as r, os, threading, random, click, fake_headers
-from threading import Thread
-from colorama import Fade
-from fake_headers import Headers
+
 
 os.system("clear")
 logo = """
