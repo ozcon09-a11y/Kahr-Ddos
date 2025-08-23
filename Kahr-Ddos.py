@@ -29,9 +29,6 @@ ________________________________________________________________
 \033[37m______________________________________________________________
 """
 
-regular_headers = [ "User-agent: Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0",
-                    "Accept-language: en-US,en,q=0.5"]
-
 def init_socket(ip,port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(4)
