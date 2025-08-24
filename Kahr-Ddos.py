@@ -29,7 +29,7 @@ logo = """
 \033[96m║\033[33m                       in defending                         \033[96m║
 \033[96m║\033[32m                     P A L E S T I N E                      \033[96m║
 \033[96m║\033[95m                           ——o0o——                          \033[96m║
-\033[96m╚═══════════════════════ BLACK ARMY COMUNITY ════════════════════
+\033[96m╚════════════════════ BLACK ARMY COMUNITY ═══════════════════
 """
 faded_text = fade.fire(logo)
 print(faded_text)
