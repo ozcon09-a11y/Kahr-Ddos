@@ -49,7 +49,7 @@ def init_socket(ip,port):
 
 def main():
     if len(sys.argv)<5:
-        print(("Usage: {} example.com 80 100 3".format(sys.argv[0])))
+        print(("Usage: {} example.com 80 100 2".format(sys.argv[0])))
         return
 
     ip = sys.argv[1]
