@@ -90,7 +90,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[32m {}       Connecting...".format("\n")))
+            print(("\033[97m {}       Connecting...".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
