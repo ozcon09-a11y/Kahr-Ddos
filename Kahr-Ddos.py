@@ -78,6 +78,9 @@ def main():
             except socket.error:
                 socket_list.remove(s)
 
+        for _ in range(socket_count - len(socket_list)): 
+              print(("\033[97m {}     Connecting...".format("\n")))
+
     while True:
         print(("\033[92m [÷] Kahr builds an attack {}".format(len(socket_list))))
 
@@ -90,8 +93,6 @@ def main():
         for _ in range(socket_count - len(socket_list)):
             print(("\033[33m {}     Connecting...".format("\n")))
         
-        for _ in range(socket_count - len(socket_list)): 
-              print(("\033[97m {}     Connecting...".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
