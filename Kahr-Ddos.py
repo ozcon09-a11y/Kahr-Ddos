@@ -76,7 +76,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m {}Kahr Connection to the web sends packets{}".format(len(socket_list)))) ".format("\n")))
+            print(("\033[33m {}Kahr Connection to the web sends packets{}".format(len(socket_list)))) ".format("\")))
             try:
                 s=init_socket(ip,port)
                 if s:
