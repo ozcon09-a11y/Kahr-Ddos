@@ -70,7 +70,7 @@ def main():
     bar.finish()
 
     while True:
-        print(("\033[34m [÷] Kahr build attack flooding the target {}".format(len(socket_list))))
+        print(("\033[32m [÷] Kahr build attack flooding the target {}".format(len(socket_list))))
 
         for s in socket_list:
             try:
