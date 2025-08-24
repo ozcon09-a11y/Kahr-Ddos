@@ -79,7 +79,7 @@ def main():
                 socket_list.remove(s)
 
         for _ in range(socket_count - len(socket_list)):
-            print(("\033[33m {}     Connenting...".format("\n")))
+            print(("\033[33m {}     Connenting the Web...".format("\n")))
             try:
                 s=init_socket(ip,port)
                 if s:
