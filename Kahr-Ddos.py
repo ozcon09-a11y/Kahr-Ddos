@@ -90,7 +90,6 @@ def main():
         for _ in range(socket_count - len(socket_list)):
             print(("\033[33m {}     Connecting...".format("\n")))
         
-          
         for _ in range(socket_count - len(socket_list)): 
               print(("\033[97m {}     Connecting...".format("\n")))
             try:
